@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="simpleListSearch.js"></script>
+</head>
+<body>
+  <input type="search" placeholder="search list items" id="search">
+  <ul>
+    <li class="listitem">Prince</li>
+    <li class="listitem">Roxette</li>
+    <li class="listitem">Michael Jackson</li>
+    <li class="listitem">David Bowie</li>
+    <li class="listitem">Rolling Stones</li>
+    <li class="listitem">Keith Richards</li>
+    <li class="listitem">The Who</li>
+    <li class="listitem">Madonna</li>
+    <li class="listitem">Paul Revere & the Raiders</li>
+    <li class="listitem">The Kinks</li>
+  </ul>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      simpleListSearch.init({
+        searchFieldId: "search",
+        itemClass: "listitem",
+        displayType: "list-item"
+      });
+    });
+  </script>
+</body>
+</html>
