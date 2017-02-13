@@ -8,7 +8,7 @@ var simpleListSearch = {
   setEventListener: function() {
     simpleListSearch.searchField.addEventListener("keyup", function(event) {
       var value = event.target.value;
-      if(value < 3) {
+      if(value.length < 3) {
         simpleListSearch.showAllListItems();
       } else {
         simpleListSearch.filterListItems(value);
